@@ -61,3 +61,8 @@ Identify customer segments with high churn and provide insights that can help a 
 - Create additional retention metrics.
 - Develop a machine learning model to predict customer churn.
 - Improve the Power BI dashboard with more interactive filters and KPIs.
+## Power BI Dashboard
+
+The dashboard provides a visual analysis of customer churn, highlighting churn patterns across contract types, payment methods, customer tenure, and monthly charges.
+
+![Customer Churn Analysis Dashboard](reports/customer_churn_dashboard.png)
