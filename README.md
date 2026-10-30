@@ -66,3 +66,22 @@ Identify customer segments with high churn and provide insights that can help a 
 The dashboard provides a visual analysis of customer churn, highlighting churn patterns across contract types, payment methods, customer tenure, and monthly charges.
 
 ![Customer Churn Analysis Dashboard](reports/customer_churn_dashboard.png)
+## Key Business Insights
+
+The analysis explores customer churn patterns to identify areas where a business can improve customer retention.
+
+- **Overall churn:** Approximately 26.58% of customers in the cleaned dataset have churned.
+- **Contract type:** Compare churn rates across month-to-month, one-year, and two-year contracts to identify higher-risk customer groups.
+- **Payment method:** Analyze churn by payment method to identify patterns that may warrant further investigation.
+- **Customer tenure:** Examine how churn varies with customer tenure to understand retention challenges among newer and longer-term customers.
+- **Monthly charges:** Compare monthly charges between customers who churned and those who stayed to explore possible relationships between pricing and retention.
+
+### Business Recommendations
+
+1. Investigate why customers on month-to-month contracts may be more likely to leave.
+2. Develop targeted onboarding and engagement strategies for new customers.
+3. Review payment-related customer experiences to identify potential friction points.
+4. Evaluate pricing and service bundles to understand whether affordability influences churn.
+5. Monitor churn rates regularly to measure the effectiveness of retention initiatives.
+
+*Note: These are analysis areas and potential recommendations. Validate each finding against the actual query results before treating it as a confirmed business conclusion.*
