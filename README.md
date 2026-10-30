@@ -1,148 +1,63 @@
-\# Customer Churn Analysis
+# Customer Churn Analysis
 
+## Project Overview
+This project analyzes customer churn for a telecommunications company using Python, MySQL, and Power BI. The goal is to identify customer segments with high churn rates and generate insights to support customer retention.
 
+## Tools and Technologies
+- Python
+- Pandas
+- Matplotlib
+- MySQL
+- Power BI
+- Git and GitHub
 
-\## Project Overview
+## Dataset
+The dataset contains customer demographics, services, contract types, payment methods, monthly charges, tenure, and churn status.
 
-This project analyzes customer churn for a telecommunications company using Python, MySQL, and Power BI. The objective is to identify customer segments with higher churn rates and develop insights that can help improve customer retention.
+- Original dataset: 7,043 records
+- Cleaned dataset: 7,032 records
+- Missing values in `TotalCharges` were handled during data cleaning.
 
-
-
-\## Tools and Technologies
-
-\- Python
-
-\- Pandas
-
-\- Matplotlib
-
-\- MySQL
-
-\- Power BI
-
-\- Git and GitHub
-
-
-
-\## Dataset
-
-The dataset contains telecommunications customer information, including:
-
-\- Customer demographics
-
-\- Contract types
-
-\- Internet and phone services
-
-\- Payment methods
-
-\- Monthly and total charges
-
-\- Customer tenure
-
-\- Churn status
-
-
-
-The original dataset contains 7,043 records. After cleaning missing values in `TotalCharges`, 7,032 records remain for analysis.
-
-
-
-\## Project Structure
-
-
-
+## Project Structure
 ```text
-
 customer-churn-analysis/
-
 ├── data/
-
 │   ├── raw/
-
-│   │   └── Telco-Customer-Churn.csv
-
 │   └── processed/
-
-│       └── customer\_churn\_cleaned.csv
-
 ├── powerbi/
-
-│   └── Customer\_Churn\_Analysis.pbix
-
+│   └── Customer_Churn_Analysis.pbix
 ├── python/
-
-│   ├── churn\_analysis.py
-
-│   └── import\_to\_mysql.py
-
+│   ├── churn_analysis.py
+│   └── import_to_mysql.py
 ├── reports/
-
-│   ├── churn\_by\_contract.png
-
-│   ├── churn\_by\_payment\_method.png
-
-│   ├── churn\_by\_tenure.png
-
-│   └── monthly\_charges\_by\_churn.png
-
+│   ├── churn_by_contract.png
+│   ├── churn_by_payment_method.png
+│   ├── churn_by_tenure.png
+│   └── monthly_charges_by_churn.png
 ├── sql/
-
+├── .gitignore
 └── README.md
-
 ```
 
+## Key Findings
+- Overall customer churn rate: approximately 26.58%.
+- Month-to-month contracts show higher churn than longer-term contracts.
+- Customer tenure is an important factor when examining churn patterns.
+- Payment method is another useful dimension for understanding churn.
 
+## How to Run
+1. Install Python and the required libraries.
+2. Run the analysis script:
+   `python python/churn_analysis.py`
+3. Review the generated charts in the `reports/` folder.
+4. Open `powerbi/Customer_Churn_Analysis.pbix` using Power BI Desktop.
+5. Configure your local MySQL connection before running the database import script.
 
-\## Key Findings
+## Business Objective
+Identify customer segments with high churn and provide insights that can help a telecommunications business improve customer retention.
 
-\- The overall customer churn rate is approximately 26.58%.
-
-\- Customers on month-to-month contracts show higher churn than customers on longer-term contracts.
-
-\- Customer tenure is an important factor to examine when identifying churn patterns.
-
-\- Payment method is another useful dimension for exploring customer churn.
-
-
-
-These findings are based on the cleaned dataset and dashboard analysis.
-
-
-
-\## How to Run
-
-1\. Clone or download the repository.
-
-2\. Install Python and the required libraries.
-
-3\. Run the Python analysis script:
-
-&#x20;  `python python/churn\_analysis.py`
-
-4\. Review the generated charts in the `reports/` folder.
-
-5\. Open `powerbi/Customer\_Churn\_Analysis.pbix` in Power BI Desktop to explore the dashboard.
-
-
-
-The MySQL import script can be used to load the cleaned dataset into a MySQL database after configuring your local database connection.
-
-
-
-\## Business Objective
-
-The goal is to identify customer groups with elevated churn and provide data-driven insights that support customer retention strategies.
-
-
-
-\## Future Improvements
-
-\- Add SQL queries for customer segmentation and churn analysis.
-
-\- Develop additional customer retention metrics.
-
-\- Explore predictive modeling to identify customers at risk of churn.
-
-\- Enhance the Power BI dashboard with interactive filters and additional KPIs.
-
+## Future Improvements
+- Add SQL queries for churn analysis and customer segmentation.
+- Create additional retention metrics.
+- Develop a machine learning model to predict customer churn.
+- Improve the Power BI dashboard with more interactive filters and KPIs.
